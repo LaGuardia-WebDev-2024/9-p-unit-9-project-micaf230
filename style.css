@@ -4,11 +4,16 @@ body {
   background-image: url("https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY.jpg");
   text-align: center;
   margin: auto;
-   font-family: "Poetsen One", serif;
+  font-family: "Poetsen One", serif;
 }
 
-h1{
+h1 {
   font-size: 30px;
+  color: white;
+}
+
+p {
+  font-size: 20px;
   color: white;
 }
 
