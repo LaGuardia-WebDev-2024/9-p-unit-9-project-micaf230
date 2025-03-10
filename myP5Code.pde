@@ -1,8 +1,15 @@
 var answer = 1;
 var showDetails = true;  
+
 setup = function() {
     size(400, 400);
 };
+
+function drawTriangle() {
+    fill(random(0, 255), random(0, 255), random(0, 255));
+    triangle(200, 104, 280, 280, 120, 280);
+}
+
 
 draw = function() {
     background(100, 100, 100);
@@ -10,11 +17,12 @@ draw = function() {
     fill(0, 0, 0);
     ellipse(200, 200, 375, 375);
 
-    fill(60, 0, 255);
-    triangle(200, 104, 280, 280, 120, 280);
-    fill(255, 255, 255);
+    
+    drawTriangle();
 
+    fill(255, 255, 255);
     textSize(12);
+
     if (answer == 1) {
         text("It is certain", 174, 215);
     } else if (answer == 2) {
@@ -68,7 +76,6 @@ draw = function() {
         text("Very doubtful", 165, 215);
     }
 
-
     if (showDetails) {
         // Black circle 2
         fill(0, 0, 0);
@@ -94,4 +101,5 @@ void keyPressed() {
         showDetails = !showDetails;  
     }
 }
+
 
